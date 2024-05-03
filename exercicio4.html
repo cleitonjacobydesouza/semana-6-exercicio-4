@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function coletarDados(){
+            let nome = prompt('Digite o seu nome');
+            let idade = prompt('Digite a sua idade');
+            let email = prompt('Digite o seu email');
+        
+
+        const usuario = {
+            nome: nome,
+            idade: idade,
+            email: email
+        }
+
+        localStorage.setItem("user", JSON.stringify(usuario) )
+
+        alert(`Usuario cadastrado com sucesso`);
+    }
+        coletarDados()
+    </script>
+</body>
+</html>
